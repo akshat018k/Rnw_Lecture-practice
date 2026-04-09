@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Nested Table</title>
+
+<style>
+    body {
+        font-family: Georgia;
+    }
+
+    table {
+        border-collapse: collapse;
+        margin: 20px auto;
+        width: 50%;
+        background-color: white;
+    }
+
+    th, td {
+        border: 3px solid black;
+        padding: 10px;
+    }
+
+    th {
+        background-color: lightseagreen;
+        color: black;
+        font-size: 24px;
+    }
+
+    td {
+        background-color: whitesmoke;
+        font-size: 20px;
+    }
+
+    .inner-table th {
+        background-color: khaki;
+        font-size: 20px;
+    }
+
+    .inner-table td {
+        background-color: white;
+    }
+</style>
+</head>
+
+<body>
+
+<table>
+    <thead>
+        <tr>
+            <th>Device</th>
+            <th>Brand</th>
+            <th>Specifications</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Smartphone</td>
+            <td>Apple</td>
+            <td>
+                <!-- Nested Table -->
+                <table class="inner-table">
+                    <thead>
+                        <tr>
+                            <th>Model</th>
+                            <th>Storage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>iPhone 12 Pro</td>
+                            <td>256GB</td>
+                        </tr>
+                        <tr>
+                            <td>iPhone SE</td>
+                            <td>128GB</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Laptop</td>
+            <td>HP</td>
+            <td>15.6" Display</td>
+        </tr>
+
+        <tr>
+            <td>Tablet</td>
+            <td>Samsung</td>
+            <td>10.5" Display</td>
+        </tr>
+    </tbody>
+
+</table>
+
+</body>
+</html>
