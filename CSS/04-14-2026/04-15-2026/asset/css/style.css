@@ -1,0 +1,25 @@
+@import'demo.css';
+
+h2{
+	color: white;
+	background: aqua; 
+	text-align: center;
+	}
+
+.par{
+	background: gray;
+	font-size: 20px;
+}
+
+#par{
+	background: green;
+	font-size: 20px;
+}
+
+div ul li{
+	color: skyblue;
+}
+
+p{
+	font-size: 18px;
+}
