@@ -1,0 +1,36 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.card {
+    width: 60%;
+    margin: 50px auto;
+    border: 5px solid black;
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+}
+
+
+
+.role {
+    color: gray;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-top: 20px;
+    text-decoration: underline;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+h2 i {
+    margin-right: 8px;
+}
+
+p {
+    margin: 10px 0;
+}
