@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #e6e6e6;
+}
+
+/* Top */
+.top {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.large {
+    padding: 10px;
+    border: 6px solid #2b8cff;
+    border-radius: 10px;
+    background: white;
+}
+
+.large img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Bottom Flex */
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+/* Left Box */
+.team-box {
+    border: 3px solid #2b5cff;
+    padding: 20px;
+    width: 250px;
+}
+
+.team-box h2 {
+    margin-bottom: 25px;
+}
+
+.mini-card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.mini-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid green;
+}
+
+.mini-card h3 {
+    margin: 10px 0 5px;
+}
+
+.mini-card p {
+    color: green;
+}
+
+/* Right Card */
+.profile-card {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.profile-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-top img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.social {
+    margin: 15px 0;
+    background: #2b8cff;
+    padding: 5px;
+    text-align: center;
+}
+
+.social span {
+    margin: 0 8px;
+    color: white;
+}
+
+.desc {
+    font-size: 12px;
+    text-align: center;
+}
