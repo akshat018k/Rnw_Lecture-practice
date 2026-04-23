@@ -1,0 +1,77 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fixed Header */
+.fixed {
+    height: 80px;
+    background: darkgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Body spacing */
+body {
+    padding-top: 80px;
+    font-family: Arial;
+}
+
+/* Parallax Section */
+.parallax {
+    height: 400px;
+    background-image: url("../image/image.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* Gradient Sections */
+.linear {
+    height: 300px;
+    background: linear-gradient(to right, orange, red);
+    color: white;
+    padding: 10px;
+}
+
+.radial {
+    height: 300px;
+    background: radial-gradient(circle, blue, darkblue);
+    color: white;
+    padding: 10px;
+}
+
+.conic {
+    height: 300px;
+    background: conic-gradient(red, orange, purple);
+    color: white;
+    padding: 10px;
+}
+
+/* Two Class Example */
+.text-block {
+    padding: 15px;
+    border: 2px solid black;
+}
+
+/* Parent Child */
+.parent {
+    text-align: center;
+    padding: 20px;
+}
+
+.parent p {
+    color: gray;
+}
