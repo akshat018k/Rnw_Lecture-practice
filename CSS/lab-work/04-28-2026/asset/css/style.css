@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+.header{
+    background-color: #2C3E50;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+.side{
+    width: 180px;
+    height: 625px;
+    padding: 40px 20px;
+    position: relative;
+    background-color: white;
+    border-right: 1px solid gray;
+    box-shadow: 1px 1px 10px black;
+}
+
+h2{
+    padding-bottom: 20px;
+}
+
+.cards{
+    position: absolute;
+    left: 250px;
+}
+
+.box{
+    position: relative;
+}
+
+.fix-btn{
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color: #2C3E50;
+    border-radius: 12px 12px 0px 1px;
+    
+}
+
+.side > p{
+    padding-block: 5px;
+}
+
+.box > .m-note{
+    width: 250px;
+    height: 200px;
+    background-color: #FFF9C4;
+    box-shadow: 1px 1px 10px black;
+    padding: 25px;
+    position: absolute;
+}
+
+.box > .g-list{
+    width: 250px;
+    height: 200px;
+    background-color: #C8E6C9;
+    box-shadow: 1px 1px 10px black;
+    padding: 30px;
+    position: absolute;
+    top: 60px;
+    left: 320px;
+}
+
+.box > .a-idea{
+    width: 260px;
+    height: 220px;
+    background-color: #FFE0B2;
+    box-shadow: 1px 1px 10px black;
+    padding: 30px;
+    position: absolute;
+    top: 130px;
+    left: 650px;
+}
+
+.box > .t-goals{
+    width: 260px;
+    height: 220px;
+    background-color: #BBDEFB;
+    box-shadow: 1px 1px 10px black;
+    padding: 30px;
+    position: absolute;
+    top: 205px;
+    left: 980px;
+}
+
+
+.fix-btn > button{
+    background-color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+}
