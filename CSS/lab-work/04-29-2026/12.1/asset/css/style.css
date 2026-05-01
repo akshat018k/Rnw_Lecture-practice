@@ -1,0 +1,226 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body {
+    background: lightslategray;
+}
+.contenairs {
+    padding: 15px;
+    height: 100%;
+    width: 100%;
+}
+
+.white{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+}
+
+ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+.contenairs > h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.box1 {
+    width: 1480px;
+    height: 500px;
+    margin-inline: 15px;
+    background: yellow;
+    display: flex;
+}
+
+.box1 > div {
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+
+.box2 {
+    width: 1480px;
+    height: 500px;
+    margin-inline: 15px;
+    background: yellow;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.box2 > div {
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+
+.box3 {
+    width: 1480px;
+    height: 500px;
+    margin-inline: 15px;
+    background: yellow;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.box3 > div {
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+
+.box4 {
+    width: 1480px;
+    height: 500px;
+    margin-inline: 15px;
+    background: yellow;
+    flex-wrap: wrap-reverse;
+    display: flex;
+}
+
+.box4 > div {
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+
+.box5 {
+    width: 1480px;
+    height: 500px;
+    margin-inline: 15px;
+    background: yellow;
+    display: flex;
+    flex-direction: row;
+}
+
+.box5 > div {
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+
+.box6 {
+    width: 1480px;
+    height: 500px;
+    margin-inline: 15px;
+    background: yellow;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.box6 > div {
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+
+.box7 {
+    width: 1480px;
+    height: 500px;
+    margin-inline: 15px;
+    background: yellow;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.box7 > div {
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+
+.box8 {
+    width: 1480px;
+    height: 500px;
+    margin-inline: 15px;
+    background: yellow;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+
+.box8 > div {
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+
+.box9 {
+    width: 1480px;
+    height: 500px;
+    margin-inline: 15px;
+    background: yellow;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.box9 > div {
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+
+.box10 {
+    width: 1480px;
+    height: 500px;
+    margin-inline: 15px;
+    background: yellow;
+    display: flex;
+    flex-flow: wrap-reverse;
+}
+
+.box10 > div {
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+
+.box11 {
+    width: 1480px;
+    height: 500px;
+    margin-inline: 15px;
+    background: yellow;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.box11 > div {
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+
+.box12 {
+    width: 1480px;
+    height: 500px;
+    margin-inline: 15px;
+    background: yellow;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.box12 > div {
+    width: 100px;
+    height: 100px;
+    background-color: aliceblue;
+    border: 1px solid black;
+}
