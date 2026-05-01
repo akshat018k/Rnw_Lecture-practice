@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.maindiv{
+    width: 1400px;
+    height: 900px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    height: 350px ;
+    width: 300px;
+}
+
+.card img{
+    padding: 25px;
+    height: 310px;
+    width: auto;
+}
+
+.card h4{
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.card p {
+    color: grey;
+    font-weight: bold;
+}
+
