@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    width: 50%;
+    background:#0e0e0e;
+    font-family:Arial;
+    color:white;
+}
+
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 🔥 CATEGORY */
+.categories{
+    display:flex;
+    gap:15px;
+    padding:20px;
+    overflow-x:auto;
+}
+
+.cat-card{
+    flex:0 0 180px;
+    background:#1f1f1f;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.cat-card span{
+    font-size:14px;
+    color:#aaa;
+}
+
+/* 🔥 LAYOUT */
+.layout{
+    display:flex;
+    gap:15px;
+    width:90%;
+    margin:20px auto;
+}
+
+/* SIDEBAR */
+.sidebar{
+    flex:0 0 200px;
+    background:#1f1f1f;
+    padding:15px;
+    border-radius:12px;
+    overflow-y:auto;
+}
+
+.item{
+    padding:10px;
+    margin-bottom:5px;
+    background:#2a2a2a;
+    border-radius:6px;
+}
+
+.active{
+    background:#3a3a3a;
+}
+
+/* CONTENT */
+.content{
+    flex:1;
+    background:#1f1f1f;
+    padding:20px;
+    border-radius:12px;
+}
+
+.feed{
+    margin-top:10px;
+    max-height:200px;
+    overflow-y:auto;
+}
+
+.feed-item{
+    padding:10px;
+    margin-bottom:8px;
+    background:#2a2a2a;
+    border-radius:6px;
+}
+
+.feed-item span{
+    float:right;
+    font-size:12px;
+    color:#aaa;
+}
+
+/* 🔥 PERFORMERS */
+.performers{
+    display:flex;
+    gap:15px;
+    padding:20px;
+    overflow-x:auto;
+}
+
+.card{
+    flex:0 0 150px;
+    background:#1f1f1f;
+    padding:20px;
+    border-radius:12px;
+    text-align:center;
+}
+
+.card span{
+    display:block;
+    margin-top:10px;
+    color:#00ff99;
+}
