@@ -1,0 +1,189 @@
+/* style.css */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial;
+}
+
+body{
+    background:#f3f3f3;
+    padding:40px;
+}
+
+.container{
+    max-width:90%;   
+    margin:auto;
+    background:white;
+    padding:30px;
+    border:3px solid black;
+}
+
+h2{
+    margin-bottom:20px;
+    margin-top:20px;
+}
+
+.tags{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    gap:10px;
+    margin-bottom:40px;
+}
+
+.tag{
+    height: 60px;
+    width: 17%;
+    border:1px solid #ccc;
+    background:#fafafa;
+    border-radius:5px;
+    font-size:14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.courses{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border:1px solid #ddd;
+    border-radius:10px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.content{
+    padding:15px;
+}
+
+.color{
+    color: gold;
+}
+
+.text{
+    font-size: 18px;
+}
+.content h3{
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+.content p{
+    font-size:14px;
+    color:gray;
+    margin-bottom:10px;
+}
+
+.price{
+    font-size:18px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.price span{
+    text-decoration:line-through;
+    color:gray;
+    font-size:14px;
+    margin-left:10px;
+}
+
+button{
+    background:purple;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+
+@media(min-width:1400px){
+
+    .card{
+        width:18%;
+    }
+
+    .tag{
+        width: 17%;
+    }
+
+}
+
+@media(max-width:1200px){
+
+    .card{
+        width:31%;
+    }
+
+    .tag{
+        width: 23%;
+    }
+
+}
+
+@media(max-width:992px){
+
+    .card{
+        width:48%;
+    }
+
+    .tag{
+        width: 31%;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .card{
+        width:48%;
+    }
+
+    .tag{
+        width: 48%;
+    }
+
+    .card img{
+        height:150px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .card{
+        width:100%;
+    }
+
+    .tag{
+        width: 100%;
+        height: 50px;
+        font-size: 13px;
+    }
+
+    .container{
+        padding:15px;
+    }
+
+    h2{
+        font-size:20px;
+    }
+
+}
