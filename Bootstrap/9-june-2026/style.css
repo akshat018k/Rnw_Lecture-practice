@@ -1,0 +1,27 @@
+.navbar{
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.nav-link{
+    color: white !important;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+
+.nav-link:hover{
+    color: #d4a017 !important;
+}
+
+.nav-link.active{
+    border-bottom: 2px solid #d4a017;
+}
+
+.btn-warning{
+    background: #d4a017;
+    border: none;
+    color: #000;
+}
+
+.btn-warning:hover{
+    background: #e0b02f;
+}

@@ -1,0 +1,2338 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Bootstrap Complete Concepts</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#side"
+    data-bs-smooth-scroll="true"
+    tabindex="0"
+  >
+    <nav class="navbar navbar-dark bg-dark sticky-top">
+      <div class="container-fluid">
+        <span class="navbar-brand">Bootstrap Complete Concepts Project</span>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3 border-end">
+          <div
+            id="side"
+            class="list-group sticky-top"
+            style="top: 70px; height: 90vh; overflow-y: auto"
+          >
+            <a class="list-group-item list-group-item-action" href="#s1"
+              >Layout - Breakpoints</a
+            ><a class="list-group-item list-group-item-action" href="#s2"
+              >Layout - Containers</a
+            ><a class="list-group-item list-group-item-action" href="#s3"
+              >Layout - Grid</a
+            ><a class="list-group-item list-group-item-action" href="#s4"
+              >Layout - Columns</a
+            ><a class="list-group-item list-group-item-action" href="#s5"
+              >Layout - Gutters</a
+            ><a class="list-group-item list-group-item-action" href="#s6"
+              >Reboot Example </a
+            ><a class="list-group-item list-group-item-action" href="#s7"
+              >Content - Typography</a
+            ><a class="list-group-item list-group-item-action" href="#s8"
+              >Content - Images</a
+            ><a class="list-group-item list-group-item-action" href="#s9"
+              >Content - Tables</a
+            ><a class="list-group-item list-group-item-action" href="#s10"
+            >Figure</a>
+            <a class="list-group-item list-group-item-action" href="#s11"
+              >Forms - Controls</a
+            ><a class="list-group-item list-group-item-action" href="#s12"
+              >Forms - Select</a
+            ><a class="list-group-item list-group-item-action" href="#s13"
+              >Forms - Checks & Radios</a
+            ><a class="list-group-item list-group-item-action" href="#s14"
+              >Forms - Input Group</a
+            ><a class="list-group-item list-group-item-action" href="#s15"
+              >Forms - Floating Labels</a
+            ><a class="list-group-item list-group-item-action" href="#s16"
+              >Forms - Validation</a
+            ><a class="list-group-item list-group-item-action" href="#s17"
+              >Accordion</a
+            ><a class="list-group-item list-group-item-action" href="#s18"
+              >Alerts</a
+            ><a class="list-group-item list-group-item-action" href="#s19"
+              >Badges</a
+            ><a class="list-group-item list-group-item-action" href="#s20"
+              >Breadcrumb</a
+            ><a class="list-group-item list-group-item-action" href="#s21"
+              >Buttons</a
+            ><a class="list-group-item list-group-item-action" href="#s22"
+              >Button Group</a
+            ><a class="list-group-item list-group-item-action" href="#s23"
+              >Cards</a
+            ><a class="list-group-item list-group-item-action" href="#s24"
+              >Carousel</a
+            ><a class="list-group-item list-group-item-action" href="#s25"
+              >Collapse</a
+            ><a class="list-group-item list-group-item-action" href="#s26"
+              >Dropdowns</a
+            ><a class="list-group-item list-group-item-action" href="#s27"
+              >List Group</a
+            ><a class="list-group-item list-group-item-action" href="#s28"
+              >Modal</a
+            ><a class="list-group-item list-group-item-action" href="#s29"
+              >Navs & Tabs</a
+            ><a class="list-group-item list-group-item-action" href="#s30"
+              >Navbar</a
+            ><a class="list-group-item list-group-item-action" href="#s31"
+              >Offcanvas</a
+            ><a class="list-group-item list-group-item-action" href="#s32"
+              >Pagination</a
+            ><a class="list-group-item list-group-item-action" href="#s33"
+              >Popovers</a
+            ><a class="list-group-item list-group-item-action" href="#s34"
+              >Progress</a
+            ><a class="list-group-item list-group-item-action" href="#s35"
+              >Scrollspy</a
+            ><a class="list-group-item list-group-item-action" href="#s36"
+              >Spinners</a
+            ><a class="list-group-item list-group-item-action" href="#s37"
+              >Toasts</a
+            ><a class="list-group-item list-group-item-action" href="#s38"
+              >Tooltips</a
+            ><a class="list-group-item list-group-item-action" href="#s39"
+              >Helpers</a
+            ><a class="list-group-item list-group-item-action" href="#s40"
+              >Utilities</a
+            >
+          </div>
+        </div>
+        <div class="col-md-9">
+          <section id="s1" class="py-5 border-bottom">
+            <h2>Layout - Breakpoints</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <div class="row">
+                  <div
+                    class="col-12 col-sm-6 col-md-4 col-lg-3 bg-primary text-white p-3 border"
+                  >
+                    Box 1
+                  </div>
+
+                  <div
+                    class="col-12 col-sm-6 col-md-4 col-lg-3 bg-success text-white p-3 border"
+                  >
+                    Box 2
+                  </div>
+
+                  <div
+                    class="col-12 col-sm-6 col-md-4 col-lg-3 bg-danger text-white p-3 border"
+                  >
+                    Box 3
+                  </div>
+
+                  <div
+                    class="col-12 col-sm-6 col-md-12 col-lg-3 bg-warning text-dark p-3 border"
+                  >
+                    Box 4
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="s2" class="py-5 border-bottom">
+            <h2>Layout - Containers</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <div class="bg-primary text-white p-4 mt-4">
+                  <h4>Container</h4>
+
+                  <p>This is a fixed-width container.</p>
+                </div>
+
+                <!-- Fluid Container -->
+                <div class="container-fluid bg-success text-white p-4 mt-4">
+                  <h4>Container Fluid</h4>
+
+                  <p>This container takes 100% width of the screen.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="s3" class="py-5 border-bottom">
+            <h2>Layout - Grid</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <div class="row p-2">
+                  <div class="col border">col-1</div>
+                  <div class="col border">col-2</div>
+                  <div class="col border">col-3</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="s4" class="py-5 border-bottom">
+            <h2>Layout - Columns</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <div class="row g-4">
+                  <div class="col-6 p-3 text-white bg-primary">Colums-1</div>
+                  <div class="col-6 p-3 text-white bg-secondary">Colums-1</div>
+                  <div class="col-4 p-3 text-white bg-danger">Colums-1</div>
+                  <div class="col-4 p-3 text-white bg-secondary">Colums-1</div>
+                  <div class="col-4 p-3 text-white bg-primary">Colums-1</div>
+                  <div class="col-3 p-3 text-white bg-success">Colums-1</div>
+                  <div class="col-3 p-3 text-white bg-warning">Colums-1</div>
+                  <div class="col-3 p-3 text-white bg-info">Colums-1</div>
+                  <div class="col-3 p-3 text-white bg-dark">Colums-1</div>
+
+                  <div class="col p-3 text-white bg-primary">Colums-1</div>
+                  <div class="col p-3 text-white bg-success">Colums-1</div>
+                  <div class="col p-3 text-white bg-danger">Colums-1</div>
+                  <div class="col p-3 text-white bg-info">Colums-1</div>
+                  <div class="col p-3 text-white bg-secondary">Colums-1</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="s5" class="py-5 border-bottom">
+            <h2>Layout - Gutters</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <div class="row g-4">
+                  <div class="col-md-4">
+                    <div class="bg-primary text-white p-4">Column 1</div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="bg-success text-white p-4">Column 2</div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="bg-danger text-white p-4">Column 3</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="s6" class="py-5 border-bottom">
+            <div class="container mt-5">
+              <h1 class="text-primary">Bootstrap Reboot Example</h1>
+
+              <p>
+                Reboot provides a consistent baseline for HTML elements across
+                browsers.
+              </p>
+
+              <hr />
+
+              <!-- Headings -->
+              <h2>Headings</h2>
+              <h1>Heading H1</h1>
+              <h2>Heading H2</h2>
+              <h3>Heading H3</h3>
+
+              <hr />
+
+              <!-- List -->
+              <h2>List</h2>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Bootstrap</li>
+              </ul>
+
+              <hr />
+
+              <!-- Inline Code -->
+              <h2>Code Example</h2>
+              <p>Use <code>&lt;div&gt;</code> tag to create a division.</p>
+
+              <pre class="bg-light p-3 border">
+            &lt;div class="container"&gt;
+                Hello Bootstrap
+            &lt;/div&gt;
+                </pre
+              >
+
+              <hr />
+
+              <!-- Table -->
+              <h2>Table</h2>
+
+              <table class="table table-bordered">
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                </tr>
+
+                <tr>
+                  <td>1</td>
+                  <td>Akshat</td>
+                </tr>
+              </table>
+
+              <hr />
+
+              <!-- Form -->
+              <h2>Form</h2>
+
+              <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" />
+              </div>
+
+              <button class="btn btn-primary">Submit</button>
+            </div>
+          </section>
+          <section id="s7" class="py-5 border-bottom">
+            <h2>Content - Typography</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <div class="mt-5">
+                  <h1 class="text-center text-primary">
+                    Bootstrap Typography Example
+                  </h1>
+
+                  <hr />
+
+                  <!-- Headings -->
+                  <h2>Headings</h2>
+
+                  <h1>h1. Bootstrap Heading</h1>
+                  <h2>h2. Bootstrap Heading</h2>
+                  <h3>h3. Bootstrap Heading</h3>
+                  <h4>h4. Bootstrap Heading</h4>
+                  <h5>h5. Bootstrap Heading</h5>
+                  <h6>h6. Bootstrap Heading</h6>
+
+                  <hr />
+
+                  <!-- Display Headings -->
+                  <h2>Display Headings</h2>
+
+                  <h1 class="display-1">Display 1</h1>
+                  <h1 class="display-4">Display 4</h1>
+
+                  <hr />
+
+                  <!-- Lead -->
+                  <h2>Lead Paragraph</h2>
+
+                  <p class="lead">
+                    This is a lead paragraph. It stands out from regular
+                    paragraphs.
+                  </p>
+
+                  <hr />
+
+                  <!-- Inline Text -->
+                  <h2>Inline Text Elements</h2>
+
+                  <p><mark>Highlighted Text</mark></p>
+                  <p><strong>Bold Text</strong></p>
+                  <p><em>Italic Text</em></p>
+                  <p><u>Underlined Text</u></p>
+                  <p><del>Deleted Text</del></p>
+                  <p><small>Small Text</small></p>
+
+                  <hr />
+
+                  <!-- Blockquote -->
+                  <h2>Blockquote</h2>
+
+                  <figure>
+                    <blockquote class="blockquote">
+                      <p>Success is not final, failure is not fatal.</p>
+                    </blockquote>
+
+                    <figcaption class="blockquote-footer">
+                      Winston Churchill
+                    </figcaption>
+                  </figure>
+
+                  <hr />
+
+                  <!-- List -->
+                  <h2>Inline List</h2>
+
+                  <ul class="list-inline">
+                    <li class="list-inline-item">HTML</li>
+                    <li class="list-inline-item">CSS</li>
+                    <li class="list-inline-item">Bootstrap</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="s8" class="py-5 border-bottom">
+            <h2>Content - Images</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <div class="mt-5">
+                  <h1 class="text-center text-primary">
+                    Bootstrap Images Example
+                  </h1>
+
+                  <hr />
+
+                  <!-- Responsive Image -->
+                  <h2>1. Responsive Image (.img-fluid)</h2>
+
+                  <img
+                    src="https://picsum.photos/800/300"
+                    class="img-fluid"
+                    alt="Responsive Image"
+                  />
+
+                  <hr />
+
+                  <!-- Thumbnail Image -->
+                  <h2>2. Thumbnail Image (.img-thumbnail)</h2>
+
+                  <img
+                    src="https://picsum.photos/250"
+                    class="img-thumbnail"
+                    alt="Thumbnail"
+                  />
+
+                  <hr />
+
+                  <!-- Float Images -->
+                  <h2>3. Align Images</h2>
+
+                  <img
+                    src="https://picsum.photos/150"
+                    class="rounded float-start"
+                    alt="Left Image"
+                  />
+
+                  <img
+                    src="https://picsum.photos/150"
+                    class="rounded float-end"
+                    alt="Right Image"
+                  />
+
+                  <div class="clearfix"></div>
+
+                  <hr />
+
+                  <!-- Center Image -->
+                  <h2>4. Center Image</h2>
+
+                  <img
+                    src="https://picsum.photos/200"
+                    class="rounded mx-auto d-block"
+                    alt="Center Image"
+                  />
+
+                  <hr />
+
+                  <!-- Text Center Image -->
+                  <h2>5. Text Center Image</h2>
+
+                  <div class="text-center">
+                    <img
+                      src="https://picsum.photos/200"
+                      class="rounded"
+                      alt="Centered Image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="s9" class="py-5 border-bottom">
+            <h2>Content - Tables</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body mt-5">
+                <h1 class="text-center text-primary">
+                  Bootstrap Table Example
+                </h1>
+
+                <hr />
+
+                <!-- Responsive Table -->
+                <div class="table-responsive">
+                  <table class="table table-striped table-hover table-bordered">
+                    <thead class="table-dark">
+                      <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Course</th>
+                        <th>City</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Akshat</td>
+                        <td>B.Sc IT</td>
+                        <td>Surat</td>
+                      </tr>
+
+                      <tr>
+                        <td>2</td>
+                        <td>Rahul</td>
+                        <td>BCA</td>
+                        <td>Ahmedabad</td>
+                      </tr>
+
+                      <tr class="table-success">
+                        <td>3</td>
+                        <td>Riddhi</td>
+                        <td>MCA</td>
+                        <td>Vadodara</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="s10" class="py-5 border-bottom">
+            <h2>Bootstrap Figure with Caption</h2>
+
+            <div class="container mt-5 text-center card">
+              <h1 class="text-primary">Bootstrap Figure Example</h1>
+
+              <hr />
+
+              <figure class="figure">
+                <img
+                  src="https://picsum.photos/500/300"
+                  class="figure-img img-fluid rounded"
+                  alt="Nature Image"
+                />
+
+                <figcaption class="figure-caption">
+                  This is a caption for the above image.
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section id="s11" class="py-5 border-bottom">
+            <div class="container mt-5">
+              
+              <h2 class="text-center text-primary mb-4">
+                Bootstrap Forms Example
+              </h2>
+
+              <form>
+              
+                <div class="mb-3">
+                  <label for="email" class="form-label"> Email Address </label>
+
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Enter Email"
+                  />
+
+                  <div class="form-text">We'll never share your email.</div>
+                </div>
+
+              
+                <div class="mb-3">
+                  <label for="password" class="form-label"> Password </label>
+
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="password"
+                    placeholder="Enter Password"
+                  />
+                </div>
+
+                <!-- Checkbox -->
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="checkbox" id="check" />
+
+                  <label class="form-check-label" for="check">
+                    Remember Me
+                  </label>
+                </div>
+
+                <!-- Select -->
+                <div class="mb-3">
+                  <label class="form-label"> Select Course </label>
+
+                  <select class="form-select">
+                    <option>B.Sc IT</option>
+                    <option>BCA</option>
+                    <option>MCA</option>
+                  </select>
+                </div>
+
+                <!-- Button -->
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </section>
+          <!-- <section id="s11" class="py-5 border-bottom">
+            <h2>Forms - Controls</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <div class="mt-5">
+                  <div class="mb-3">
+                    <label class="form-label"> Email Address </label>
+
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="name@example.com"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label"> Message </label>
+
+                    <textarea class="form-control" rows="3"></textarea>
+                  </div>
+
+                  
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control form-control-lg"
+                      placeholder="Large Input"
+                    />
+                  </div>
+
+                  
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control form-control-sm"
+                      placeholder="Small Input"
+                    />
+                  </div>
+
+                  
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Disabled Input"
+                      disabled
+                    />
+                  </div>
+
+                  
+                  <div class="mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      value="Readonly Input"
+                      readonly
+                    />
+                  </div>
+
+                  
+                  <div class="mb-3">
+                    <label class="form-label"> Upload File </label>
+
+                    <input type="file" class="form-control" />
+                  </div>
+
+                  
+                  <div class="mb-3">
+                    <label class="form-label"> Select Color </label>
+
+                    <input
+                      type="color"
+                      class="form-control form-control-color"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section> -->
+
+          <section id="s12" class="py-5 border-bottom">
+            <h2>Forms - Select</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <div class="mt-5">
+                  <!-- Default Select -->
+                  <div class="mb-3">
+                    <label class="form-label"> Select Course </label>
+
+                    <select class="form-select">
+                      <option selected>Choose Course</option>
+                      <option>B.Sc IT</option>
+                      <option>BCA</option>
+                      <option>MCA</option>
+                    </select>
+                  </div>
+
+                  <!-- Large Select -->
+                  <div class="mb-3">
+                    <label class="form-label"> Large Select </label>
+
+                    <select class="form-select form-select-lg">
+                      <option selected>Large Select Menu</option>
+                      <option>HTML</option>
+                      <option>CSS</option>
+                      <option>Bootstrap</option>
+                    </select>
+                  </div>
+
+                  <!-- Small Select -->
+                  <div class="mb-3">
+                    <label class="form-label"> Small Select </label>
+
+                    <select class="form-select form-select-sm">
+                      <option selected>Small Select Menu</option>
+                      <option>Java</option>
+                      <option>Python</option>
+                      <option>C Language</option>
+                    </select>
+                  </div>
+
+                  <!-- Disabled Select -->
+                  <div class="mb-3">
+                    <label class="form-label"> Disabled Select </label>
+
+                    <select class="form-select" disabled>
+                      <option selected>Disabled Menu</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="s13" class="py-5 border-bottom">
+            <h2>Forms - Checks & Radios</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <div class="mt-5">
+                  <!-- Checkbox -->
+                  <h4>Checkboxes</h4>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="check1"
+                    />
+
+                    <label class="form-check-label" for="check1"> HTML </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="check2"
+                      checked
+                    />
+
+                    <label class="form-check-label" for="check2">
+                      CSS (Checked)
+                    </label>
+                  </div>
+
+                  <hr />
+
+                  <!-- Radio Buttons -->
+                  <h4>Radio Buttons</h4>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="course"
+                      id="radio1"
+                    />
+
+                    <label class="form-check-label" for="radio1"> BCA </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="course"
+                      id="radio2"
+                      checked
+                    />
+
+                    <label class="form-check-label" for="radio2">
+                      B.Sc IT
+                    </label>
+                  </div>
+
+                  <hr />
+
+                  <!-- Switch -->
+                  <h4>Switch</h4>
+
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="switch1"
+                    />
+
+                    <label class="form-check-label" for="switch1">
+                      Enable Notification
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- <section id="s14" class="py-5 border-bottom">
+            <h2>Forms - Input Group</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card-body">
+              <h5>Example</h5>
+
+              <div class="mt-5">
+                <h2 class="text-center text-primary mb-4">
+                  Bootstrap Range Example
+                </h2>
+
+                
+                <div class="mb-4">
+                  <label class="form-label"> Default Range </label>
+
+                  <input type="range" class="form-range" />
+                </div>
+
+                
+                <div class="mb-4">
+                  <label class="form-label"> Range (0 to 5) </label>
+
+                  <input type="range" class="form-range" min="0" max="5" />
+                </div>
+
+                
+                <div class="mb-4">
+                  <label class="form-label"> Step Range (0.5) </label>
+
+                  <input
+                    type="range"
+                    class="form-range"
+                    min="0"
+                    max="5"
+                    step="0.5"
+                  />
+                </div>
+
+                
+                <div class="mb-4">
+                  <label class="form-label"> Disabled Range </label>
+
+                  <input type="range" class="form-range" disabled />
+                </div>
+              </div>
+            </div>
+          </section> -->
+          <section id="s14" class="py-5 border-bottom">
+            <h2>Forms - Input Group</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+
+                <div class="mt-5">
+                  <h2 class="text-center text-primary mb-4">
+                    Bootstrap Input Group Example
+                  </h2>
+
+                  <!-- Username -->
+                  <div class="input-group mb-3">
+                    <span class="input-group-text">@</span>
+
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Username"
+                    />
+                  </div>
+
+                  <!-- Email -->
+                  <div class="input-group mb-3">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Email"
+                    />
+
+                    <span class="input-group-text"> @gmail.com </span>
+                  </div>
+
+                  <!-- Amount -->
+                  <div class="input-group mb-3">
+                    <span class="input-group-text">$</span>
+
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Amount"
+                    />
+
+                    <span class="input-group-text">.00</span>
+                  </div>
+
+                  <!-- Button Addon -->
+                  <div class="input-group mb-3">
+                    <button class="btn btn-primary">Search</button>
+
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Enter Text"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="s15" class="py-5 border-bottom">
+            <h2>Forms - Floating Labels</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <div class="mt-5">
+                  <h2 class="text-center text-primary mb-4">
+                    Bootstrap Floating Labels Example
+                  </h2>
+
+                  <!-- Email -->
+                  <div class="form-floating mb-3">
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="floatingEmail"
+                      placeholder="name@example.com"
+                    />
+
+                    <label for="floatingEmail"> Email Address </label>
+                  </div>
+
+                  <!-- Password -->
+                  <div class="form-floating mb-3">
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="floatingPassword"
+                      placeholder="Password"
+                    />
+
+                    <label for="floatingPassword"> Password </label>
+                  </div>
+
+                  <!-- Textarea -->
+                  <div class="form-floating mb-3">
+                    <textarea
+                      class="form-control"
+                      placeholder="Leave a comment"
+                      id="floatingTextarea"
+                      style="height: 100px"
+                    ></textarea>
+
+                    <label for="floatingTextarea"> Comments </label>
+                  </div>
+
+                  <!-- Select -->
+                  <div class="form-floating">
+                    <select class="form-select" id="floatingSelect">
+                      <option selected>Select Course</option>
+                      <option>B.Sc IT</option>
+                      <option>BCA</option>
+                      <option>MCA</option>
+                    </select>
+
+                    <label for="floatingSelect"> Course </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="s16" class="py-5 border-bottom">
+            <h2>Forms - Validation</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <div class="mt-5">
+                  <h2 class="text-center text-primary mb-4">
+                    Bootstrap Form Layout Example
+                  </h2>
+
+                  <form class="row g-3">
+                    <div class="col-md-6">
+                      <label class="form-label"> First Name </label>
+
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter First Name"
+                      />
+                    </div>
+
+                    <div class="col-md-6">
+                      <label class="form-label"> Last Name </label>
+
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Enter Last Name"
+                      />
+                    </div>
+
+                    <div class="col-md-6">
+                      <label class="form-label"> Email </label>
+
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Enter Email"
+                      />
+                    </div>
+
+                    <div class="col-md-6">
+                      <label class="form-label"> Password </label>
+
+                      <input
+                        type="password"
+                        class="form-control"
+                        placeholder="Enter Password"
+                      />
+                    </div>
+
+                    <div class="col-12">
+                      <label class="form-label"> Address </label>
+
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="123 Main Street"
+                      />
+                    </div>
+
+                    <div class="col-md-4">
+                      <label class="form-label"> City </label>
+
+                      <input type="text" class="form-control" />
+                    </div>
+
+                    <div class="col-md-4">
+                      <label class="form-label"> State </label>
+
+                      <select class="form-select">
+                        <option selected>Select State</option>
+                        <option>Gujarat</option>
+                        <option>Maharashtra</option>
+                      </select>
+                    </div>
+
+                    <div class="col-md-4">
+                      <label class="form-label"> Zip Code </label>
+
+                      <input type="text" class="form-control" />
+                    </div>
+
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="check1"
+                        />
+
+                        <label class="form-check-label" for="check1">
+                          Accept Terms & Conditions
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="col-12">
+                      <button type="submit" class="btn btn-primary">
+                        Submit
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="s17" class="py-5 border-bottom">
+            <h2>Accordion</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <div class="mt-5">
+                  <h2 class="text-center text-primary mb-4">
+                    Bootstrap Accordion Example
+                  </h2>
+
+                  <div class="accordion" id="accordionExample">
+                    <!-- Item 1 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne"
+                        >
+                          What is Bootstrap?
+                        </button>
+                      </h2>
+
+                      <div
+                        id="collapseOne"
+                        class="accordion-collapse collapse show"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          Bootstrap is a popular CSS framework used to create
+                          responsive websites.
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo"
+                        >
+                          What is HTML?
+                        </button>
+                      </h2>
+
+                      <div
+                        id="collapseTwo"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          HTML stands for HyperText Markup Language.
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree"
+                        >
+                          What is CSS?
+                        </button>
+                      </h2>
+
+                      <div
+                        id="collapseThree"
+                        class="accordion-collapse collapse"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          CSS is used for styling web pages.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="s18" class="py-5 border-bottom">
+            <h2>Alerts</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+
+                <div class="mt-5">
+                  <h2>Alert Example</h2>
+
+                  <div class="alert alert-success">
+                    Registration Successful!
+                  </div>
+
+                  <div class="alert alert-warning">
+                    Please fill all required fields.
+                  </div>
+
+                  <div class="alert alert-danger">
+                    Invalid Username or Password.
+                  </div>
+
+                  <div class="alert alert-info">New update is available.</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="s19" class="py-5 border-bottom">
+            <h2>Badges</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <div class="mt-5">
+                  <h2>Bootstrap Badge Example</h2>
+
+                  <h4>
+                    Student Dashboard
+                    <span class="badge bg-primary">New</span>
+                  </h4>
+
+                  <br />
+
+                  <button
+                    type="button"
+                    class="btn btn-primary position-relative"
+                  >
+                    Inbox
+                    <span
+                      class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                    >
+                      99+
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                  </button>
+
+                  <br />
+                  <br />
+
+                  <button class="btn btn-success">
+                    Notifications
+                    <span class="badge bg-light text-dark">5</span>
+                  </button>
+
+                  <br /><br />
+
+                  <span class="badge bg-primary">Primary</span>
+                  <span class="badge bg-success">Success</span>
+                  <span class="badge bg-danger">Danger</span>
+                  <span class="badge bg-warning text-dark">Warning</span>
+
+                  <br /><br />
+
+                  <span class="badge rounded-pill bg-info"> Student </span>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="s20" class="py-5 border-bottom">
+            <h2>Breadcrumb</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                      <a href="#">Home</a>
+                    </li>
+
+                    <li class="breadcrumb-item">
+                      <a href="#">Bootstrap</a>
+                    </li>
+
+                    <li class="breadcrumb-item active">Breadcrumb</li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+          </section>
+
+          <section id="s21" class="py-5 border-bottom">
+            <h2>Buttons</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <div class="d-flex gap-3 mt-4">
+                  <a href="#" class="btn btn-warning px-5 py-3 fw-bold fs-5">
+                    Reserve Now
+                  </a>
+
+                  <a href="#" class="btn px-5 py-3 fw-bold fs-5"> View Menu </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="s22" class="py-5 border-bottom">
+            <h2>Button Group</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <h2>Button Toolbar Example</h2>
+
+                <div class="btn-toolbar">
+                  <div class="btn-group me-2">
+                    <button class="btn btn-primary">1</button>
+                    <button class="btn btn-primary">2</button>
+                    <button class="btn btn-primary">3</button>
+                  </div>
+
+                  <div class="btn-group">
+                    <button class="btn btn-success">A</button>
+                    <button class="btn btn-success">B</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="s23" class="py-5 border-bottom">
+            <h2>Cards</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <div class="card" style="width: 18rem">
+                  <img
+                    src="https://picsum.photos/300/200"
+                    class="card-img-top"
+                    alt="Image"
+                  />
+
+                  <div class="card-body">
+                    <h5 class="card-title">Student Profile</h5>
+
+                    <p class="card-text">
+                      Name: Akshat <br />
+                      Course: B.Sc IT
+                    </p>
+
+                    <a href="#" class="btn btn-primary"> View Profile </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="s24" class="py-5 border-bottom">
+            <h2>Carousel</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                  <!-- Indicators -->
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#demo"
+                      data-bs-slide-to="0"
+                      class="active"
+                    ></button>
+
+                    <button
+                      type="button"
+                      data-bs-target="#demo"
+                      data-bs-slide-to="1"
+                    ></button>
+
+                    <button
+                      type="button"
+                      data-bs-target="#demo"
+                      data-bs-slide-to="2"
+                    ></button>
+                  </div>
+
+                  <!-- Images -->
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="https://picsum.photos/id/1015/900/400"
+                        class="d-block w-100"
+                        alt="Image 1"
+                      />
+                    </div>
+
+                    <div class="carousel-item">
+                      <img
+                        src="https://picsum.photos/id/1016/900/400"
+                        class="d-block w-100"
+                        alt="Image 2"
+                      />
+                    </div>
+
+                    <div class="carousel-item">
+                      <img
+                        src="https://picsum.photos/id/1018/900/400"
+                        class="d-block w-100"
+                        alt="Image 3"
+                      />
+                    </div>
+                  </div>
+
+                  <!-- Previous Button -->
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#demo"
+                    data-bs-slide="prev"
+                  >
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+
+                  <!-- Next Button -->
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#demo"
+                    data-bs-slide="next"
+                  >
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="s25" class="py-5 border-bottom">
+            <h2>Collapse</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#demo"
+                >
+                  Show / Hide Content
+                </button>
+
+                <!-- Collapse Content -->
+                <div class="collapse mt-3" id="demo">
+                  <div class="card card-body">
+                    Bootstrap Collapse component is used to show and hide
+                    content with a button click.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="s26" class="py-5 border-bottom">
+            <h2>Dropdowns</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <div class="dropdown">
+                  <button
+                    class="btn btn-primary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                  >
+                    Select Course
+                  </button>
+
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="#"> B.Sc IT </a>
+                    </li>
+
+                    <li>
+                      <a class="dropdown-item" href="#"> BCA </a>
+                    </li>
+
+                    <li>
+                      <a class="dropdown-item" href="#"> MCA </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="s27" class="py-5 border-bottom">
+            <h2>List Group</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <ul class="list-group">
+                  <li class="list-group-item active">HTML</li>
+
+                  <li class="list-group-item">CSS</li>
+
+                  <li class="list-group-item">Bootstrap</li>
+
+                  <li class="list-group-item">JavaScript</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section id="s28" class="py-5 border-bottom">
+            <h2>Modal</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <!-- Button -->
+                <button
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#myModal"
+                >
+                  Open Modal
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <!-- Header -->
+                      <div class="modal-header">
+                        <h4 class="modal-title">Student Information</h4>
+
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                        ></button>
+                      </div>
+
+                      <!-- Body -->
+                      <div class="modal-body">
+                        Welcome to Bootstrap Modal Example.
+                      </div>
+
+                      <!-- Footer -->
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-danger"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="s29" class="py-5 border-bottom">
+            <h2>Navs & Tabs</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <ul class="nav nav-tabs">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      data-bs-toggle="tab"
+                      href="#home"
+                    >
+                      Home
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#about">
+                      About
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="tab" href="#contact">
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+
+                <!-- Tab Content -->
+                <div class="tab-content border p-3">
+                  <div class="tab-pane fade show active" id="home">
+                    <h4>Home</h4>
+                    <p>Welcome to Home Page.</p>
+                  </div>
+
+                  <div class="tab-pane fade" id="about">
+                    <h4>About</h4>
+                    <p>This is About Page.</p>
+                  </div>
+
+                  <div class="tab-pane fade" id="contact">
+                    <h4>Contact</h4>
+                    <p>Contact us for more information.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="s30" class="py-5 border-bottom">
+            <h2>Navbar</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <header>
+                  <nav
+                    class="navbar navbar-expand-lg navbar-dark bg-black py-3"
+                  >
+                    <div class="container">
+                      <!-- Logo -->
+                      <a class="navbar-brand" href="#">
+                        <h2 class="m-0 text-warning fw-bold">ZERO</h2>
+                        <small class="text-warning">RESTAURANT</small>
+                      </a>
+
+                      <!-- Mobile Toggle -->
+                      <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                      >
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+
+                      <!-- Menu -->
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav mx-auto">
+                          <li class="nav-item">
+                            <a
+                              class="nav-link active text-warning fw-semibold"
+                              href="#"
+                            >
+                              Home
+                            </a>
+                          </li>
+
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"> About </a>
+                          </li>
+
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"> Menu </a>
+                          </li>
+
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"> Gallery </a>
+                          </li>
+
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"> Reservation </a>
+                          </li>
+
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"> Contact </a>
+                          </li>
+                        </ul>
+
+                        <!-- Button -->
+                        <a
+                          href="#"
+                          class="btn btn-warning px-4 py-2 fw-semibold"
+                        >
+                          Book Table
+                        </a>
+                      </div>
+                    </div>
+                  </nav>
+                </header>
+              </div>
+            </div>
+          </section>
+
+          <section id="s31" class="py-5 border-bottom">
+            <h2>Offcanvas</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <button
+                  class="btn btn-primary"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#demo"
+                >
+                  Open Menu
+                </button>
+
+                <!-- Offcanvas -->
+                <div class="offcanvas offcanvas-start" id="demo">
+                  <div class="offcanvas-header">
+                    <h4 class="offcanvas-title">Student Menu</h4>
+
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="offcanvas"
+                    ></button>
+                  </div>
+
+                  <div class="offcanvas-body">
+                    <p>Home</p>
+                    <p>About</p>
+                    <p>Courses</p>
+                    <p>Contact</p>
+
+                    <button class="btn btn-success">Login</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="s32" class="py-5 border-bottom">
+            <h2>Pagination</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <nav>
+                  <ul class="pagination">
+                    <li class="page-item">
+                      <a class="page-link" href="#"> Previous </a>
+                    </li>
+
+                    <li class="page-item active">
+                      <a class="page-link" href="#"> 1 </a>
+                    </li>
+
+                    <li class="page-item">
+                      <a class="page-link" href="#"> 2 </a>
+                    </li>
+
+                    <li class="page-item">
+                      <a class="page-link" href="#"> 3 </a>
+                    </li>
+
+                    <li class="page-item">
+                      <a class="page-link" href="#"> Next </a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </section>
+
+          <section id="s33" class="py-5 border-bottom">
+            <h2>Popovers</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="popover"
+                  title="Student Information"
+                  data-bs-content="Welcome to Bootstrap Popover Example"
+                >
+                  Click Me
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section id="s34" class="py-5 border-bottom">
+            <h2>Progress</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <p>HTML Progress</p>
+
+                <div class="progress mb-3">
+                  <div class="progress-bar bg-success" style="width: 75%">
+                    75%
+                  </div>
+                </div>
+
+                <p>CSS Progress</p>
+
+                <div class="progress mb-3">
+                  <div class="progress-bar bg-primary" style="width: 60%">
+                    60%
+                  </div>
+                </div>
+
+                <p>Bootstrap Progress</p>
+
+                <div class="progress">
+                  <div class="progress-bar bg-warning" style="width: 90%">
+                    90%
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="s35" class="py-5 border-bottom">
+            <h2>Scrollspy</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <nav
+                  id="navbar-example"
+                  class="navbar navbar-light bg-light sticky-top"
+                >
+                  <ul class="nav nav-pills">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#section1"> Home </a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#section2"> About </a>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="nav-link" href="#section3"> Contact </a>
+                    </li>
+                  </ul>
+                </nav>
+
+                <!-- Sections -->
+                <div id="section1" style="height: 150px">
+                  <h3>Home</h3>
+                  <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Vel, saepe numquam. Temporibus molestias repudiandae vitae
+                    facilis aliquam, reprehenderit repellat accusamus quos enim
+                    amet veniam, quae minus cupiditate aut fuga fugiat!.
+                  </p>
+                </div>
+
+                <div id="section2" style="height: 150px">
+                  <h3>About</h3>
+                  <p>Welcome to About Section.</p>
+                </div>
+
+                <div id="section3" style="height: 150px">
+                  <h3>Contact</h3>
+                  <p>Welcome to Contact Section.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="s36" class="py-5 border-bottom">
+            <h2>Spinners</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+
+                <h2>Bootstrap Spinner Example</h2>
+
+                <!-- Default Spinner -->
+                <div class="spinner-border text-primary"></div>
+
+                <br /><br />
+
+                <!-- Success Spinner -->
+                <div class="spinner-border text-success"></div>
+
+                <br /><br />
+
+                <!-- Growing Spinner -->
+                <div class="spinner-grow text-danger"></div>
+
+                <br /><br />
+
+                <!-- Spinner in Button -->
+                <button class="btn btn-primary" disabled>
+                  <span class="spinner-border spinner-border-sm"></span>
+
+                  Loading...
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section id="s37" class="py-5 border-bottom">
+            <h2>Toasts</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <button class="btn btn-primary" id="showToast">
+                  Show Toast
+                </button>
+
+                <!-- Toast -->
+                <div class="toast mt-3" id="myToast">
+                  <div class="toast-header">
+                    <strong class="me-auto"> Notification </strong>
+
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="toast"
+                    ></button>
+                  </div>
+
+                  <div class="toast-body">
+                    Welcome to Bootstrap Toast Example.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="s38" class="py-5 border-bottom">
+            <h2>Tooltips</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="tooltip"
+                  title="Click here to submit the form"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </section>
+
+          <section id="s39" class="py-5 border-bottom">
+            <h2>Helpers</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <hr />
+
+                <!-- Clearfix -->
+                <h4>1. Clearfix</h4>
+
+                <div class="clearfix bg-light p-3">
+                  <button class="btn btn-primary float-start">Left</button>
+
+                  <button class="btn btn-success float-end">Right</button>
+                </div>
+
+                <hr />
+
+                <!-- Colored Links -->
+                <h4>2. Colored Links</h4>
+
+                <a href="#" class="link-primary">Primary Link</a><br />
+                <a href="#" class="link-success">Success Link</a><br />
+                <a href="#" class="link-danger">Danger Link</a>
+
+                <hr />
+
+                <!-- Ratio -->
+                <h4>3. Ratio</h4>
+
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                  </iframe>
+                </div>
+
+                <hr />
+
+                <!-- Position -->
+                <h4>4. Position</h4>
+
+                <button class="btn btn-primary position-relative">
+                  Messages
+
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge bg-danger"
+                  >
+                    5
+                  </span>
+                </button>
+
+                <hr />
+
+                <!-- Visually Hidden -->
+                <h4>5. Visually Hidden</h4>
+
+                <button class="btn btn-warning">
+                  Notification
+
+                  <span class="visually-hidden"> unread messages </span>
+                </button>
+
+                <hr />
+
+                <!-- Stretched Link -->
+                <h4>6. Stretched Link</h4>
+
+                <div class="card p-3 position-relative">
+                  <h5>Bootstrap Course</h5>
+
+                  <p>Learn Bootstrap step by step.</p>
+
+                  <a href="#" class="stretched-link"> Read More </a>
+                </div>
+
+                <hr />
+
+                <!-- Text Truncation -->
+                <h4>7. Text Truncation</h4>
+
+                <div class="text-truncate border p-2" style="width: 250px">
+                  This is a very long text that will automatically truncate when
+                  it exceeds the available width.
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="s40" class="py-5 border-bottom">
+            <h2>Utilities</h2>
+            <p>
+              This section explains the Bootstrap concept and includes a sample
+              example.
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <h5>Example</h5>
+                <hr />
+
+                <!-- Background -->
+                <h4>1. Background</h4>
+
+                <div class="bg-primary text-white p-3">Primary Background</div>
+
+                <hr />
+
+                <!-- Borders -->
+                <h4>2. Borders</h4>
+
+                <div class="border border-danger p-3">Border Example</div>
+
+                <hr />
+
+                <!-- Colors -->
+                <h4>3. Colors</h4>
+
+                <p class="text-primary">Primary Text</p>
+                <p class="text-success">Success Text</p>
+                <p class="text-danger">Danger Text</p>
+
+                <hr />
+
+                <!-- Display -->
+                <h4>4. Display</h4>
+
+                <span class="d-block bg-warning p-2"> Display Block </span>
+
+                <hr />
+
+                <!-- Flex -->
+                <h4>5. Flex</h4>
+
+                <div class="d-flex gap-2">
+                  <div class="p-2 bg-primary text-white">Box 1</div>
+
+                  <div class="p-2 bg-success text-white">Box 2</div>
+                </div>
+
+                <hr />
+
+                <!-- Float -->
+                <h4>6. Float</h4>
+
+                <div class="clearfix">
+                  <button class="btn btn-primary float-start">Left</button>
+
+                  <button class="btn btn-danger float-end">Right</button>
+                </div>
+
+                <hr />
+
+                <!-- Interactions -->
+                <h4>7. Interactions</h4>
+
+                <p class="user-select-none">This text cannot be selected.</p>
+
+                <hr />
+
+                <!-- Overflow -->
+                <h4>8. Overflow</h4>
+
+                <div class="overflow-auto border" style="height: 100px">
+                  Bootstrap Utility Classes Example. Bootstrap Utility Classes
+                  Example. Bootstrap Utility Classes Example. Bootstrap Utility
+                  Classes Example. Bootstrap Utility Classes Example. Bootstrap
+                  Utility Classes Example.
+                </div>
+
+                <hr />
+
+                <!-- Position -->
+                <h4>9. Position</h4>
+
+                <button class="btn btn-primary position-relative">
+                  Inbox
+
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge bg-danger"
+                  >
+                    3
+                  </span>
+                </button>
+
+                <hr />
+
+                <!-- Shadows -->
+                <h4>10. Shadows</h4>
+
+                <div class="shadow p-3">Shadow Example</div>
+
+                <hr />
+
+                <!-- Sizing -->
+                <h4>11. Sizing</h4>
+
+                <div class="w-50 bg-info p-2">Width 50%</div>
+
+                <hr />
+
+                <!-- Spacing -->
+                <h4>12. Spacing</h4>
+
+                <div class="bg-secondary text-white m-3 p-3">
+                  Margin and Padding Example
+                </div>
+
+                <hr />
+
+                <!-- Text -->
+                <h4>13. Text</h4>
+
+                <p class="text-center fw-bold text-uppercase">
+                  Bootstrap Utilities
+                </p>
+
+                <hr />
+
+                <!-- Vertical Align -->
+                <h4>14. Vertical Align</h4>
+
+                <span class="align-top"> Top </span>
+
+                <span class="align-middle"> Middle </span>
+
+                <span class="align-bottom"> Bottom </span>
+
+                <hr />
+
+                <!-- Visibility -->
+                <h4>15. Visibility</h4>
+
+                <div class="visible">Visible Element</div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      var popoverTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="popover"]'),
+      );
+
+      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        return new bootstrap.Popover(popoverTriggerEl);
+      });
+
+      document.getElementById("showToast").onclick = function () {
+        var toastElement = document.getElementById("myToast");
+
+        var toast = new bootstrap.Toast(toastElement);
+
+        toast.show();
+      };
+
+      var tooltipTriggerList = [].slice.call(
+        document.querySelectorAll('[data-bs-toggle="tooltip"]'),
+      );
+
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl);
+      });
+    </script>
+  </body>
+</html>
